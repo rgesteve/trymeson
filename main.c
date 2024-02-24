@@ -6,7 +6,9 @@
 
 int main(int argc, char* argv[])
 {
-    fork();
+    if (-1 == fork()) {
+        exit("fork failed!\n");
+    }
     printf("Hello, world!\n");
     //return EXIT_SUCCESS;
     exit(EXIT_SUCCESS);
