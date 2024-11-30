@@ -3,7 +3,7 @@
 	//"runArgs": ["--init"],
 	"build": {
 		"dockerfile": "Dockerfile"
-	}
+	},
 
 	// // Add the IDs of extensions you want installed when the container is created.
     // "customizations": {
@@ -25,4 +25,5 @@
 	//"features": {
 	//	"github-cli": "latest"
 	//}
+	"remoteUser": "vscode"
 }
