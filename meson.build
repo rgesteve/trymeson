@@ -20,7 +20,8 @@ configure_file(
   configuration: config_h,
 )
 
+#lib = subdir('lib')
 subdir('lib')
 
-# executable('main', 'main.c', dependencies : dependency('my_lib'))
-executable('main', 'main.c')
+executable('main', 'main.c', dependencies : lib_dep)
+#executable('main', ['main.c'])
