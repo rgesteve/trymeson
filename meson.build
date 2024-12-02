@@ -20,4 +20,7 @@ configure_file(
   configuration: config_h,
 )
 
+subdir('lib')
+
+# executable('main', 'main.c', dependencies : dependency('my_lib'))
 executable('main', 'main.c')

@@ -6,6 +6,8 @@
 
 #include "trymeson-config.h"
 
+//#include "foo.h"
+
 int main(int argc, char* argv[])
 {
     if (-1 == fork()) {
